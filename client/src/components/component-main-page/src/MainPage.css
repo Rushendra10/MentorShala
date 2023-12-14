@@ -1,0 +1,115 @@
+
+.mainPage-container{
+    /* height: 100%;     */
+    /* overflow-x: hidden;
+    overflow-y: hidden; */
+    /* border: 1px solid #ff0000; */
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #734ae8;
+	background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%); */
+}
+.mainPage-header{
+    padding: clamp(0.2rem,0.5rem,1rem);
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    height: 7%;
+    background:#3457D5;
+    color: white;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cardToCommunity{
+    color: #fff;
+    background: transparent;
+}
+.cardTosetting{
+    color: #fff;
+    background: transparent;
+}
+.contentDiv{
+    /* border: 1px solid green; */
+    height: 93%;
+    display: flex;
+    /* position: relative; */
+}
+.menuBtn{
+    background: transparent;
+    color: #F0F8FF;
+}
+@media (min-width:850px) {
+    .menuBtn{
+        display: none;
+    }
+}
+#cardpart{
+    /* border: 1px solid red; */
+    /* background-color: #1F305E; */
+    /* display: flex; */
+    justify-content: center;
+    /* background-color: #734ae8;
+	background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%); */
+    /* width: 65%; */
+    /* height: ; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow-y: hidden;
+    position:relative;
+    /* background-image: url(../../../images/bg-texture.png); */
+    /* background-color: var(--color-bg); */
+}
+#community{
+    /* border: 1px solid red; */
+    /* height: 100%;
+    width: 65%; */
+    /* display: flex; */
+    justify-content: center;
+    background: #F0F8FF;
+    /* border: 1px solid red; */
+    /* background-color: #1F305E; */
+    background: linear-gradient(#002D62,#095ebe);
+    /* width:100%; */
+    /* height: ; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow-y: hidden;
+    position:relative;
+    /* background-image: url(../../../images/bg-texture.png); */
+    /* background-color: var(--color-bg); */
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: center; */
+}
+.displayer{
+    display: flex;
+}
+.remover{
+    display: none;
+}
+.activeBlur{
+    filter: blur(10px);
+}
+
+.cardTosetting{
+    margin: 8px;
+}
+
+/* #pop-up{
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0000007d;
+}    */
+.headerBtn{
+    display: flex;
+    justify-content: space-between;
+}

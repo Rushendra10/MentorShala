@@ -1,0 +1,74 @@
+.messagePart{
+    /* border-right: 1px solid #808080; */
+    /* border: 1px solid #0000ff; */
+    width: 25%;
+    box-shadow: 0px 0px 2px rgb(118, 118, 118);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width:850px) {
+    .messagePart{
+        width: 100%;
+        left: -100%;
+        position: absolute;
+        height: 100%;
+        /* display: none; */
+        transition: all 0.65s;
+        -webkit-transition: all 0.65s;
+        z-index: 19;
+    }
+    .slideWindow{
+        left: 0;
+    }
+    .closeSideBar{
+        position: absolute;
+        right: 0%;
+    }
+}
+@media (min-width:850px){
+    .closeSideBar{
+        display: none;
+    }
+}
+.mode-changer{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 5%;
+}
+.non-active{
+    /* border: 1px solid blue; */
+    border: 0.5px solid #0000003f;
+    width: 50%;
+}
+
+.active{
+    color: #3457D5;
+    border-bottom: 2px solid #3457D5;
+    width: 50%;
+}
+.deactiveSettingDiv{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 9;
+    transition: 0.5s;
+}
+.activeSetting{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 9;
+    transition: 0.5s;
+}

@@ -1,0 +1,170 @@
+.cardPart{
+    /* border: 1px solid red; */
+    /* background-color: #1F305E; */
+    /* background: linear-gradient(#002D62,#095ebe); */
+    /* width: 65%; */
+    /* height: ; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* overflow-y: hidden; */
+    /* position:relative; */
+    /* background-image: url(../../../images/bg-texture.png); */
+    /* background-color: var(--color-bg); */
+    width: 75%;
+    /* height: 100%; */
+    /* border: 1px solid red; */
+    overflow-y: hidden;
+    position: relative;
+    overflow-x: hidden;
+    position: relative;
+}
+.reportBtn{
+    color: #fff;
+    background: #f66262;
+    padding: clamp(0.2rem,0.5rem,1rem);
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+.deactivateReportForm{
+    display: none;
+}
+.reportForm{
+    /* border:1px solid red; */
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background: #00000063;
+}
+.reportForm-container{
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    /* border: 1px solid red; */
+}
+.form-report{
+    padding:clamp(0.5rem,1rem,2rem);
+    background: #fff;
+    
+}
+.form-report input{
+    border-style: none;
+    border-radius: 0%;
+    border-bottom: 1px solid red;
+    /* background: #0000004a; */
+    height: 5px;
+    margin: 1% 0%;
+    color: #000;
+}
+.report-btn-in-form{
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 0%;
+}
+.report-btn-in-form button{
+    width: 30%;
+    padding: clamp(0.2rem,0.4rem,1rem);
+    color: #fff;
+}
+.report-btn-in-form button:nth-child(1){
+    background: #f66262;
+}
+.report-btn-in-form button:nth-child(2){
+    background: #eec834;
+}
+.card-container{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    /* background-color: #734ae8;
+	background-image: linear-gradient(315deg, #734ae8 0%, #89d4cf 74%); */
+    /* width: 90vw;
+    max-width: 260px;
+    height: 300px; */
+    width: 100%;
+}
+.bgGreen{
+    background: #6ac96a;
+}
+.bgRed{
+    background: rgb(239, 120, 120);
+}
+/* .cards{
+    height: 90%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.swipe{
+    overflow-y: hidden;
+    position: absolute;
+    /* border: 1px solid red; */
+    height: 90%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .cards:hover{
+    transform: scale(1.01);
+} */
+.remove-card{
+    display: none;
+}
+.card-buttons{
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    /* border: 1px solid green; */
+}
+.card-buttons button{
+    margin: 0% 1%;
+    width: auto;
+    margin: 0% 3%;
+    padding: 1.9%;
+    border-radius: 50%;
+    border-style: none;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.5);
+    z-index: 100;
+}
+.card-buttons button:active{
+    transform: scale(1.05);
+}
+#accepted{
+    background: rgb(106, 201, 106);
+}
+#rejected{
+    background: rgb(239, 120, 120);
+}
+
+#community-btn{
+    
+}
+    @media (max-width:850px) {
+        .cardPart{
+            width: 100%;
+        }
+    	.reportForm-container{
+            width: 90%;
+        }
+    }
